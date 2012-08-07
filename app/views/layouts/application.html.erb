@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deliver Beer To Me</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<div class="navbar">
+		<div class="navbar-inner hidden-phone">
+			<%= link_to "Deliver Beer To Me", root_path, class: :logo %>
+			<%= link_to "Become a Distributor", root_path, class: :distributor %>
+		</div>
+		<div class="navbar-inner visible-phone">
+			<%= link_to "Beer Me", root_path, class: :logo %>
+			<%= link_to "Distribute", root_path, class: :distributor %>
+		</div>
+	</div>
+	
+	<% if flash[:error].present? %>
+	   	<span class="error-lbl">
+			<i class="alert-img"></i>
+			<div class="error-txt">
+				<p><%= flash[:error]%></p>
+			</div>
+		</span>
+	<% end %>
+<%= yield %>
+
+</body>
+</html>

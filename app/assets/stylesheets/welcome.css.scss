@@ -1,0 +1,268 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//Main Page
+.welcome {
+	margin-bottom:100px;
+	padding:0px 25px;
+	@media (max-width: 979px) {
+		text-align:center;
+		margin-bottom:15px;
+	}
+	
+	.form {
+		.input-btn {
+		//	height:0px;
+		display:inline;
+		
+		background-color: #f7f7f7;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
+		  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); 
+		  background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); 
+		  background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7); 
+		  background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7); 
+		  color: #a7a7a7;
+		  margin: 10px;
+		  width: 8px;
+		  height: 11px;
+		  position: relative;
+		  text-align: center;
+		  line-height: 144px;
+		  border-radius: 50%;
+		  box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+		  border:none;
+		  background-position: -288px -120px;
+		  padding:10px;
+		}
+		
+		h1 {
+			font-size: 4.3em;
+			margin: 0px;
+			max-height:300px;
+			@media (max-width: 979px) {
+				font-size:40px;
+				margin-top:20px;
+			}
+		}
+		.field-title {
+			display:inline-block;
+		}
+		
+		.field-container {
+			display:block;
+			text-align:center;
+			
+			@media (min-width: 979px) {
+				position:relative;
+				top:30px;
+				display:inline-block;
+			}
+			
+			input {
+				border-color: transparent transparent #444;
+				border-style: solid solid dotted;
+				border-width: 1px;
+				color: #555;
+				font-family: Helvetica,sans-serif,arial;
+				width: 600px;
+				font-size: 1em;
+				height: 1.1em;
+				overflow: hidden;
+				vertical-align: baseline;
+				font-weight: bold;
+				display:inline;
+				background:transparent;
+				outline:none;
+				box-shadow:none;
+				margin:15px 0px 9px 0px;
+
+				&:focus, &:focus{
+					border-color: transparent transparent #3B6E22;
+				    outline: none;
+					box-shadow:none;
+				}
+			}
+			
+			input.address {
+				width: 600px;
+				@media (max-width: 767px) {
+					text-align:center;
+					width:100%;
+				}
+			}
+			
+			input.zip {
+				width:530px;
+				@media (max-width: 767px) {
+					text-align:center;
+					width:100%;
+				}
+			}
+		}
+	}
+	
+	div.sub-text {
+		color:#555;
+		position:relative;
+		font-size:16px;
+		font-weight:normal;
+		line-height: 100%;
+		
+		i {
+			margin:0px 10px;
+			display:inline-block;
+		}
+		
+		em {
+			color:#999;
+		}
+	}
+}
+
+.not-available {
+	border-color: #444 transparent transparent ;
+	border-style: dotted solid solid;
+	border-width: 1px;
+	margin:0px 25px;
+	
+	@media (max-width: 979px) {
+		text-align:center;
+	}
+	
+	h2 {
+		margin:15px 0px 0px 0px;
+	}
+	
+	p {
+		font-size:18px;
+		line-height:120%;
+	}
+	
+	.form {
+		margin:0px 0px 50px 0px;
+		@media (max-width: 767px) {
+			margin-bottom:15px;
+		}
+		
+		.input-btn {
+		display:inline;
+		
+		background-color: #f7f7f7;
+		background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
+		  background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); 
+		  background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); 
+		  background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7); 
+		  background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7); 
+		  color: #a7a7a7;
+		  margin: 10px;
+		  width: 8px;
+		  height: 11px;
+		  position: relative;
+		  text-align: center;
+		  line-height: 144px;
+		  border-radius: 50%;
+		  box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+		  border:none;
+		  background-position: -288px -120px;
+		  padding:10px;
+		}
+		
+		h1 {
+			font-size: 40px;
+			margin: 0px 0 0px 0;
+			max-height:300px;
+			@media (max-width: 767px) {
+				margin:25px 0px 0px 0px;
+			}
+		}
+		.field-title {
+			display:inline-block;
+		}
+		
+		.field-container {
+			text-align:center;
+			display:block;
+			@media (min-width: 979px) {
+				position:relative;
+				top:30px;
+				display:inline-block;
+				margin-top:-55px;
+			}
+			
+			input {
+				border-color: transparent transparent #444;
+				border-style: solid solid dotted;
+				border-width: 1px;
+				color: #555;
+
+				width: 600px;
+				font-size: 1em;
+				height: 1.1em;
+				overflow: hidden;
+				margin-left: 5px;
+				vertical-align: baseline;
+				font-weight: bold;
+				display:inline;
+				background:transparent;
+				outline:none;
+				box-shadow:none;
+				margin-top:15px;
+
+				&:focus, &:focus{
+					border-color: transparent transparent #3B6E22;
+				    outline: none;
+					box-shadow:none;
+				}
+			}
+			
+			input.email {
+				width: 600px;
+				@media (max-width: 767px) {
+					width:100%;
+				}
+			}
+		}
+	}
+	
+	div.sub-text {
+		color:#555;
+		position:relative;
+		font-size:16px;
+		font-weight:normal;
+		line-height: 100%;
+		
+		i {
+			margin:0px 10px;
+			display:inline-block;
+		}
+		
+		em {
+			color:#999;
+		}
+		
+		@media (max-width: 767px) {
+			margin-top:15px 0px 5px 0px;
+		}
+	}
+}
+
+.about {
+	border-color: #444 transparent transparent ;
+	border-style: dotted solid solid;
+	border-width: 1px;
+	margin:0px 25px;
+	
+	@media (max-width: 979px) {
+		text-align:center;
+		margin-bottom:25px;
+	}
+	
+	h2 {
+		margin:15px 0px 0px 0px;
+	}
+	p {
+		font-size:18px;
+		line-height:120%;
+	}
+}

@@ -1,0 +1,51 @@
+<div class="centered">
+	<div class="welcome">
+		<%= form_tag order_beer_path, :class=> "form" do %>
+		 <h1>
+			Get Beer At
+			<div class="field-container">
+				<%= text_field_tag :address, nil, :class => 'address', :placeholder => '' %>
+				<div class="sub-text">
+					<i class="icon-chevron-up"></i>Enter your street address <em>123 Beer Street</em>
+				</div>
+			</div>
+				
+			</h1>
+
+			<h1>In Your Area
+				<div class="field-container">
+		   			<%= text_field_tag :zip, nil, :class => 'zip', :placeholder => '' %>
+					<div class="sub-text">
+						<i class="icon-chevron-up"></i>Enter your zipcode and press Enter
+					</div>
+				</div>
+				<%= image_submit_tag "go-btn.png", :alt => "Go", class: "input-btn"%>
+			</h1>
+		 <% end %>
+	</div>
+	
+	<% if true #flash[:city] %>
+	<div class="not-available">
+		<h2>Well Shit</h2>
+		<p>We hate to admit this, but we don't have a beer delivery distributor in <%= flash[:city] %> yet.  If you sign up below, we'll let you know when we find one.</p>
+		<%= form_tag order_beer_path, :class=> "form" do %>
+
+		 <h1>
+			I Want Beer
+			<div class="field-container">
+				<%= text_field_tag :email, nil, :class => 'email', :placeholder => '' %><span class="hidden-phone">!</span>
+				<div class="sub-text">
+					<i class="icon-chevron-up"></i>Enter your email address and we'll keep you updated
+				</div>
+			</div>
+				<%= image_submit_tag "go-btn.png", :alt => "Go", class: "input-btn"%>
+			</h1>
+		 <% end %>
+	</div>
+	<% end %>
+	
+	<div class="about">
+		<h2>Our Service is all Hopped Up!</h2>
+		<p>We partner with beer delivery services in your area to bring you cold fresh beer at a moments notice.  Don't be a dummy and drive, instead enter your address and zipcode and we'll do the rest.</p>
+	</div>
+</div>
