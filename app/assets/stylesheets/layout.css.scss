@@ -63,11 +63,15 @@
 }
 
 /* Error */
+#errors {
+	display:none;
+}
+
 .error-lbl {
 	background:image_url('error-bg.png') repeat;
 	min-height:50px;
 	height:100%;
-	font-size:23px;
+	font-size:20px;
 	color:#fff;
 	display:block;
 	margin:0px;
@@ -78,7 +82,7 @@
 		background:image_url('alert.png');
 		width:29px;
 		height:29px;
-		margin:10px 15px;
+		margin:12px 15px;
 	}
 	.error-txt {
 		padding:16px 30px;
@@ -88,6 +92,40 @@
 		}
 	}
 	
+	@media (max-width: 979px) {
+		text-align:center;
+	}
+}
+
+/* Success */
+.success-lbl {
+	background:image_url('success-bg.png') repeat;
+	min-height:50px;
+	height:100%;
+	font-size:23px;
+	color:#fff;
+	display:block;
+	margin:0px;
+	
+	.check-img {
+		display:block;
+		float:left;
+		background:image_url('check.png');
+		width:39px;
+		height:32px;
+		margin:10px 15px;
+	}
+	.success-txt {
+		padding:16px 30px;
+		line-height:110%;
+		p {
+			display:inline;
+		}
+	}
+	
+	@media (max-width: 979px) {
+		text-align:center;
+	}
 }
 
 /* Body */

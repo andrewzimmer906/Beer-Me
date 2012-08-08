@@ -3,6 +3,7 @@ Beerme::Application.routes.draw do
   root :to => 'welcome#index'
   
   post '/order_beer/' => 'welcome#order_beer'
+  post '/signup/' => 'welcome#signup'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

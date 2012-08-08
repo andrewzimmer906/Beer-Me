@@ -19,11 +19,21 @@
 		</div>
 	</div>
 	
+	<div id="notices"></div>
 	<% if flash[:error].present? %>
 	   	<span class="error-lbl">
 			<i class="alert-img"></i>
 			<div class="error-txt">
 				<p><%= flash[:error]%></p>
+			</div>
+		</span>
+	<% end %>
+	
+	<% if flash[:success].present? %>
+	   	<span class="success-lbl">
+			<i class="check-img"></i>
+			<div class="success-txt">
+				<p><%= flash[:success]%></p>
 			</div>
 		</span>
 	<% end %>

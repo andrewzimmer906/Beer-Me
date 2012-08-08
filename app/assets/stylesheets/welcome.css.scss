@@ -37,11 +37,11 @@
 		}
 		
 		h1 {
-			font-size: 4.3em;
+			font-size: 45px;
 			margin: 0px;
 			max-height:300px;
 			@media (max-width: 979px) {
-				font-size:40px;
+				font-size:35px;
 				margin-top:20px;
 			}
 		}
@@ -85,7 +85,7 @@
 			}
 			
 			input.address {
-				width: 600px;
+				width: 450px;
 				@media (max-width: 767px) {
 					text-align:center;
 					width:100%;
@@ -93,7 +93,7 @@
 			}
 			
 			input.zip {
-				width:530px;
+				width:300px;
 				@media (max-width: 767px) {
 					text-align:center;
 					width:100%;
@@ -121,10 +121,13 @@
 }
 
 .not-available {
-	border-color: #444 transparent transparent ;
-	border-style: dotted solid solid;
+	display:none;
+	background:#eee;
+	border-color: transparent transparent #444 ;
+	border-style: solid solid dotted;
 	border-width: 1px;
-	margin:0px 25px;
+	margin:0px 0px;
+	padding:0px 25px;
 	
 	@media (max-width: 979px) {
 		text-align:center;
@@ -264,5 +267,76 @@
 	p {
 		font-size:18px;
 		line-height:120%;
+	}
+	
+	/*Share Buttons*/
+	.share {
+		display:block;
+		h3 {
+			text-align:center;
+			margin-bottom:10px;
+		}
+		margin:40px auto;
+		width:307px;
+		height:20px;
+		.twitter {
+			float:left;
+			width:107px;
+		}
+		.facebook {
+			float:left;
+			width:100px;
+		}
+		.mail {
+			width:100px;
+			float:left;
+			text-align:left;
+			padding:0px;
+			i {
+				margin-top:1px;
+			}
+			span {
+				margin-left:5px;
+			}
+		}
+	}
+}
+
+/*Share Buttons*/
+#share-signup {
+	background:#efefef;
+	display:none;
+	padding:5px 15px 10px 15px;
+	h3 {
+		text-align:left;
+		display:inline-block;
+		font-size:20px;
+	}
+	
+	.inline-share {
+		position:relative;
+		top:8px;
+		display:inline-block;
+		padding-left:10px;
+	}
+	.twitter {
+		float:left;
+		width:107px;
+	}
+	.facebook {
+		float:left;
+		width:100px;
+	}
+	.mail {
+		width:100px;
+		float:left;
+		text-align:left;
+		padding:0px;
+		i {
+			margin-top:1px;
+		}
+		span {
+			margin-left:5px;
+		}
 	}
 }

@@ -1,0 +1,20 @@
+<% if @js_email_error %>
+	$("#notices").empty();
+	$("#notices").append("<span class='error-lbl'><i class='alert-img'></i><div class='error-txt'><p><%= @js_email_error %></p></div></span>");
+	$("#notices").fadeIn();
+<% end %>
+
+<% if @js_email_success %>
+	$("#notices").empty();
+	$("#notices").append("<span class='success-lbl'><i class='check-img'></i><div class='success-txt'><p><%= @js_email_success %></p></div></span>");
+	
+	if($("#request-city").is(":visible")) {
+		$('#request-city').fadeOut(function() {
+			$("#notices").fadeIn();
+			$('#share-signup').fadeIn();
+		});
+	} else {
+		$("#notices").fadeIn();
+		$('#share-signup').fadeIn();
+	}
+<% end %>

@@ -1,0 +1,25 @@
+<% if @js_error %>
+	$("#notices").empty();
+	$("#notices").append("<span class='error-lbl'><i class='alert-img'></i><div class='error-txt'><p><%= @js_error %></p></div></span>");
+
+	if($("#request-city").is(":visible")) {
+		$('#request-city').fadeOut(function() {
+			$("#notices").fadeIn();
+		});
+	} else {
+		$("#notices").fadeIn();
+	}
+<% end %>
+
+<% if @js_city %>
+	$("#city").empty();
+	$("#city").append("<%= @js_city %>");
+	
+	if($("#notices").is(":visible")) {
+		$('#notices').fadeOut(function() {
+			$("#request-city").fadeIn();
+		});
+	} else {
+		$("#request-city").fadeIn();
+	}
+<% end %>
