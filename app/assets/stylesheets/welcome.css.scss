@@ -40,7 +40,7 @@
 			font-size: 45px;
 			margin: 0px;
 			max-height:300px;
-			@media (max-width: 979px) {
+			@media (max-width: 1031px) {
 				font-size:35px;
 				margin-top:20px;
 			}
@@ -87,16 +87,24 @@
 			
 			input.address {
 				width: 450px;
-				@media (max-width: 767px) {
+				@media (max-width: 979px) {
 					text-align:center;
+					
+				}
+				
+				@media (max-width: 767px) {
 					width:100%;
 				}
 			}
 			
 			input.zip {
 				width:300px;
-				@media (max-width: 767px) {
+				
+				@media (max-width: 979px) {
 					text-align:center;
+				}
+				
+				@media (max-width: 767px) {
 					width:100%;
 				}
 			}
