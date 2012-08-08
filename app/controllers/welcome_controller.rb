@@ -4,11 +4,11 @@ class WelcomeController < ApplicationController
   
   def order_beer   
     if(params[:zip].length <= 0) #No Zip
-      @js_error = "Trouble's a'brewin! " + params[:address] + " could be anywhere! How about adding that zipcode?"
+      @js_error = "Trouble's abrewin! " + params[:address] + " could be anywhere! How about adding that zipcode?"
     end
 
     if(params[:address].length <= 0)  #No Address
-      @js_error = "Trouble's a'brewin! We can't bring you beer without an address.  GUH!"
+      @js_error = "Trouble's abrewin! We can't bring you beer without an address.  GUH!"
     end 
     
     if(params[:address].length > 0 && params[:zip].length > 0)
